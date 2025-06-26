@@ -3,10 +3,9 @@ import streamlit as st
 import numpy as np
 import pandas as pd 
 import joblib
-import os
 
-model = joblib.load(r'C:\Users\karan\OneDrive\Desktop\daily_practice\heart-disease-app\model\svm_model.pkl')
-scaler = joblib.load(r'C:\Users\karan\OneDrive\Desktop\daily_practice\heart-disease-app\model\scaler.pkl')
+model = joblib.load('model/svm_model.pkl')
+scaler = joblib.load('model/scaler.pkl')
 
 st.set_page_config(page_title="Heart Disease Predictor", layout="centered")
 
